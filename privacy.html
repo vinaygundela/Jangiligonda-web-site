@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy | Manajagiligonda</title>
+  <meta name="description" content="Privacy policy for manajagiligonda.com" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <strong>manajagiligonda.com</strong>
+        <span>Village information & community updates</span>
+      </div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="places.html">Places</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:26px">
+    <div class="card">
+      <div class="label">Privacy</div>
+      <h1>Privacy Policy</h1>
+      <p>
+        This website is intended for public, community-friendly information about Manajagiligonda village.
+        We avoid publishing private personal data.
+      </p>
+
+      <hr />
+
+      <h2>What we collect</h2>
+      <p class="small">
+        If you use the contact form (when enabled), we may receive the information you submit (name, email, message).
+        We do not sell personal data.
+      </p>
+
+      <h2>What we publish</h2>
+      <p class="small">
+        We publish general village information, public landmarks, festival notes, and community updates.
+        We do not publish phone numbers, home addresses, or sensitive personal data without permission.
+      </p>
+
+      <h2>Corrections / Removal requests</h2>
+      <p class="small">
+        If you see incorrect or sensitive content, contact us and we will review and update/remove as appropriate.
+      </p>
+
+      <p class="small">Last updated: <span id="d"></span></p>
+    </div>
+
+    <div class="footer">
+      <div class="small">© <span id="y"></span> manajagiligonda.com</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>

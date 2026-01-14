@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Manajagiligonda</title>
+  <meta name="description" content="Contact the Manajagiligonda community site admin for corrections or updates." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <strong>manajagiligonda.com</strong>
+        <span>Village information & community updates</span>
+      </div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="places.html">Places</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:26px">
+    <div class="card">
+      <div class="label">Contact</div>
+      <h1>Contact / Suggest Updates</h1>
+      <p>
+        Use this form to suggest corrections (spelling, place names, festival details) or share public photos.
+        Do not share personal phone numbers or private data here.
+      </p>
+
+      <hr />
+
+      <form>
+        <label class="small">Your Name</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <div style="height:10px"></div>
+
+        <label class="small">Email (optional)</label>
+        <input type="email" placeholder="Enter your email" />
+
+        <div style="height:10px"></div>
+
+        <label class="small">Message</label>
+        <textarea placeholder="Write your suggestion..."></textarea>
+
+        <div style="height:12px"></div>
+
+        <button type="button" onclick="alert('Form is a template. Connect Formspree/Netlify Forms to receive messages.')">
+          Send
+        </button>
+
+        <p class="small" style="margin-top:12px">
+          By sending, you agree not to submit private personal information. See <a href="privacy.html">Privacy</a>.
+        </p>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="small">© <span id="y"></span> manajagiligonda.com • <a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
